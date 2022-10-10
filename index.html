@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    *****************
+    DONE BY:-   TUMMALA KETHAN
+    *****************
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1 align="center" class="heading" style="padding: 10px 10px 10px 10px;">Sorting Visualizer</h1>
+        <nav>
+            <div class="array-inputs" style="    position: relative;
+            top: 15px;
+            right: 20%">
+                <p style="display: flex;
+                position: relative;
+                left: 30%;
+                color: coral;
+                bottom: 10px;
+                font-size: 25px;">Size of the array:</p>
+                <input id="arr_size" type="range" min=20 max=150 step=1 value=80 style="display: flex;
+                position: relative;
+                left: 30%;
+                color: coral;
+                bottom: 10px;
+                font-size: 25px;">
+                <p style="display: flex;
+                position: relative;
+                left: 30%;
+                color: coral;
+                bottom: 10px;
+                font-size: 25px;">Speed of the algorithm:</p>
+                <input id="array_speed" type="range" min=1 max=5 step=1 value=4 style="    display: flex;
+                position: relative;
+                left: 30%;">
+                <button id="array_generate" style="background-color: transparent;
+                color: white;
+                border: none;
+                display: flex;
+                position: relative;
+                left: 60%; 
+                bottom: 20px;
+                cursor: pointer;
+                font-size: 25px;
+                color: coral;">Generate New Array!</button>
+            </div>
+                <div class="sorting">
+                    <button >Bubble</button>
+                    <button >Selection</button>
+                    <button >Insertion</button>
+                    <button >Merge</button>
+                    <button >Quick</button>
+                </div>
+        </nav>
+    <section>
+        <div id="array_container"> 
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./script/main.js"></script>
+    <script src="./script/visualization.js"></script>
+    <script src="./script/bubble_sort.js"></script>
+    <script src="./script/insertion_sort.js"></script>
+    <script src="./script/quick_sort.js"></script>
+    <script src="./script/merge_sort.js"></script>
+    <script src="./script/selection_sort.js"></script>
+</body>
+</html>
